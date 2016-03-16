@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_start_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="快速开始" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="选择关卡"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/bt_sel_level1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关卡1" />
+
+        <Button
+            android:id="@+id/bt_sel_level2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关卡2" />
+
+        <Button
+            android:id="@+id/bt_sel_level3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关卡3" />
+
+        <Button
+            android:id="@+id/bt_sel_level4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关卡4" />
+    </LinearLayout>
+
+</LinearLayout>
