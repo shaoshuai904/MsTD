@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abcdef" >
+
+    <com.maple.mstd.ui.custom.GameView
+        android:id="@+id/gameview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_renew"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_base_border_bg"
+            android:text="重新开始" />
+
+        <Button
+            android:id="@+id/bt_pause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_base_border_bg"
+            android:text="暂停/开始" />
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_base_border_bg"
+            android:text="下一关" />
+
+        <Button
+            android:id="@+id/bt_exit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_base_border_bg"
+            android:text="退出" />
+    </LinearLayout>
+
+</RelativeLayout>
