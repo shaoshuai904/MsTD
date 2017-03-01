@@ -7,10 +7,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ViewInject;
 import com.maple.mstd.R;
 import com.maple.mstd.ui.custom.GameView;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * 游戏界面
@@ -18,26 +19,20 @@ import com.maple.mstd.ui.custom.GameView;
  * @author shaoshuai
  */
 public class GameActivity extends Activity implements OnClickListener {
-    @ViewInject(R.id.gameview)
-    private GameView mGameView;// 游戏视图
+    @BindView(R.id.gameview) GameView mGameView;// 游戏视图
+    @BindView(R.id.bt_renew) Button bt_renew;// 重新开始
+    @BindView(R.id.bt_pause) Button bt_pause;// 暂停
+    @BindView(R.id.bt_next) Button bt_next;// 下一关
+    @BindView(R.id.bt_exit) Button bt_exit;// 退出
 
-    @ViewInject(R.id.bt_renew)
-    private Button bt_renew;// 重新开始
-    @ViewInject(R.id.bt_pause)
-    private Button bt_pause;// 暂停
-    @ViewInject(R.id.bt_next)
-    private Button bt_next;// 下一关
-    @ViewInject(R.id.bt_exit)
-    private Button bt_exit;// 退出
-
-    public static final String IN_LOAGING_PAGE_INDEX = "intent_load_page_index";// 需要加载的页面
+    public static final String IN_LOADING_PAGE_INDEX = "intent_load_page_index";// 需要加载的页面
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_game);
-        ViewUtils.inject(this);
+        ButterKnife.bind(this);
 
         bt_renew.setOnClickListener(this);
         bt_pause.setOnClickListener(this);
@@ -45,7 +40,7 @@ public class GameActivity extends Activity implements OnClickListener {
         bt_exit.setOnClickListener(this);
 
         Intent it = getIntent();
-        int index = it.getIntExtra(IN_LOAGING_PAGE_INDEX, 0);
+        int index = it.getIntExtra(IN_LOADING_PAGE_INDEX, 0);
         mGameView.setGameLevel(index);
     }
 
