@@ -12,7 +12,7 @@ public class EnemyData {
 	public final int hp; // 血量
 	public final float moveSpeed; // 速度
 	public final int killedMoney; // 杀死后获得金币
-	public final int animTiem; // 帧动画时间, 移动速度不同帧动画时间也就不同
+	public final int animTime; // 帧动画时间, 移动速度不同帧动画时间也就不同
 	public final int num; // 数量
 	public final int id; // 图片id
 
@@ -21,7 +21,7 @@ public class EnemyData {
 		this.hp = hp;
 		this.moveSpeed = moveSpeed;
 		this.killedMoney = killedMoney;
-		this.animTiem = animTime;
+		this.animTime = animTime;
 		this.num = num;
 		this.id = drawId;
 	}

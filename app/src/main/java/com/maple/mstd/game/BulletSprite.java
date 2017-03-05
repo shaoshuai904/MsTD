@@ -22,7 +22,6 @@ public class BulletSprite extends Sprite {
 
 	public BulletSprite(Bitmap bitmap, float x, float y) {
 		super(bitmap, x, y);
-		// TODO Auto-generated constructor stub
 	}
 
 	/** 检测是否碰撞敌人 */

@@ -1,31 +1,29 @@
 package com.maple.mstd.game;
 
-import android.util.FloatMath;
-
 /**
  * 存储敌人移动路径坐标
  */
 public class Path {
 
-	private final float[] mCoordinatesX;
-	private final float[] mCoordinatesY;
+    private final float[] mCoordinatesX;
+    private final float[] mCoordinatesY;
 
-	private int mIndex;
-	private boolean mLengthChanged = false;
-	private float mLength;
+    private int mIndex;
+    private boolean mLengthChanged = false;
+    private float mLength;
 
-	/**
-	 * pLength为路径节点
-	 * 
-	 * @param pLength
-	 */
-	public Path(final int pLength) {
-		this.mCoordinatesX = new float[pLength];
-		this.mCoordinatesY = new float[pLength];
+    /**
+     * pLength为路径节点
+     *
+     * @param pLength
+     */
+    public Path(final int pLength) {
+        this.mCoordinatesX = new float[pLength];
+        this.mCoordinatesY = new float[pLength];
 
-		this.mIndex = 0;
-		this.mLengthChanged = false;
-	}
+        this.mIndex = 0;
+        this.mLengthChanged = false;
+    }
 
 //	public Path(final float[] pCoordinatesX, final float[] pCoordinatesY) throws IllegalArgumentException {
 //		if (pCoordinatesX.length != pCoordinatesY.length) {
@@ -55,25 +53,25 @@ public class Path {
 //		return new Path(this);
 //	}
 
-	public Path to(final float pX, final float pY) {
-		this.mCoordinatesX[this.mIndex] = pX;
-		this.mCoordinatesY[this.mIndex] = pY;
-		this.mIndex++;
-		this.mLengthChanged = true;
-		return this;
-	}
+    public Path to(final float pX, final float pY) {
+        this.mCoordinatesX[this.mIndex] = pX;
+        this.mCoordinatesY[this.mIndex] = pY;
+        this.mIndex++;
+        this.mLengthChanged = true;
+        return this;
+    }
 
-	public float[] getCoordinatesX() {
-		return this.mCoordinatesX;
-	}
+    public float[] getCoordinatesX() {
+        return this.mCoordinatesX;
+    }
 
-	public float[] getCoordinatesY() {
-		return this.mCoordinatesY;
-	}
+    public float[] getCoordinatesY() {
+        return this.mCoordinatesY;
+    }
 
-	public int getSize() {
-		return this.mCoordinatesX.length;
-	}
+    public int getSize() {
+        return this.mCoordinatesX.length;
+    }
 
 //	public float getLength() {
 //		if (this.mLengthChanged) {

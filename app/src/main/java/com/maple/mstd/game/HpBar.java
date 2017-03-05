@@ -17,9 +17,9 @@ public class HpBar {
 
 	private int hpOrg;// 总血量
 
-	public HpBar(int vWidth, int vHeigth, int hp) {
+	public HpBar(int vWidth, int vHeight, int hp) {
 		this.hpBarLength = vWidth;
-		this.hpBarHeight = vHeigth;
+		this.hpBarHeight = vHeight;
 		this.hpOrg = hp;
 	}
 

@@ -144,7 +144,7 @@ public class Enemy extends Sprite {
 		moveSpeed = enemyData.moveSpeed;
 		moveSpeedOrg = moveSpeed;
 		killedMoney = enemyData.killedMoney;
-		setAnimationTime(enemyData.animTiem);
+		setAnimationTime(enemyData.animTime);
 	}
 
 	/** 是否减速 */
