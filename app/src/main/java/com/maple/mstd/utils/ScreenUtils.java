@@ -17,7 +17,7 @@ import android.widget.ListView;
 public class ScreenUtils {
 
     private ScreenUtils() {
-		/* cannot be instantiated */
+        /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

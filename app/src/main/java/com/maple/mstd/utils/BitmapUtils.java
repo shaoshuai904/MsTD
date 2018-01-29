@@ -12,7 +12,7 @@ import java.io.InputStream;
  */
 public class BitmapUtils {
     private BitmapUtils() {
-		/* cannot be instantiated */
+        /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

@@ -8,7 +8,7 @@ import android.util.TypedValue;
  */
 public class DensityUtils {
     private DensityUtils() {
-		/* 不能被实例化 */
+        /* 不能被实例化 */
         throw new UnsupportedOperationException("不能被实例化");
     }
 
