@@ -13,9 +13,5 @@
 
 ![Level_2](https://github.com/shaoshuai904/MsTD/blob/master/screens/level_2.png)
 
-![Level_3](https://github.com/shaoshuai904/MsTD/blob/master/screens/level_3.png)
-
-![Level_4](https://github.com/shaoshuai904/MsTD/blob/master/screens/level_4.png)
-
 Usage
 -----
